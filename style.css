@@ -1,0 +1,295 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    padding: 10px;
+    background-color: #f5deb3;
+}
+
+header img {
+    height: 100px;
+    width: 100px;
+    margin-right: auto;
+}
+
+header nav {
+    width: 80%;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-items {
+    font-size: 30px;
+    color: #000000;
+    font-weight: 900;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-items:hover {
+    font-size: 40px;
+    color: #4e3939;
+}
+
+#home {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5%;
+    height: 100vh;
+    align-items: center;
+}
+
+#home div h1 {
+    font-size: 150px;
+    padding-left: 10%;
+    color: #3c3cda;
+}
+
+#home div p {
+    font-size: 100px;
+    padding-left: 10%;
+    font-weight: bold;
+}
+
+#home img {
+    width: 60%; 
+}
+
+#service {
+    padding-top: 10%;
+    padding-bottom: 5%;
+    height: 100hv;
+}
+
+#service h2 {
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#service h2 span {
+    color: #3c3cda;
+}
+
+#service p {
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#service h3 {
+    margin: 20px;
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#service-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.service-card-items {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #dbebf8;
+    box-shadow: 0 14px 18px 0 #00000033;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.service-card-items:hover {
+    box-shadow: 0 8px 16px 0 #00000033;
+    transform: translateY(-30px);
+}
+
+
+.service-card-items img {
+    width: 200px;
+    height: 250px;
+}
+
+.service-card-items figcaption {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#gallery {
+    padding-top: 10%;
+    padding-bottom: 5%;
+    height: 100hv;
+}
+
+#gallery h2 {
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#gallery-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-nav-items img {
+    width: 250px;
+    height: 250px;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.gallery-nav-items img:hover {
+    opacity: 1;
+}
+
+.gallery-nav-items figcaption {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#gallery-body img {
+    width: 400px;
+    height: 500px;
+}
+
+#gallery-body{
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 5%;
+    justify-content: center;
+}
+
+#gallery-body li {
+    justify-content: center;
+}
+
+#about {
+    padding-top: 10%;
+    padding-bottom: 5%;
+    height: 100hv;
+    display: flex;
+    flex-direction: row;
+}
+
+#about div h2 {
+    font-size: 80px;
+    margin-top: 10%;
+    padding-left: 10%;
+    text-align: center;
+}
+
+#about div p {
+    font-size: 30px;
+    padding-left: 10%;
+    text-align: justify;
+    
+}
+
+#about img {
+    width: 60%;
+}
+
+#contact {
+    padding-top: 10%;
+    height: 100hv;
+    display: flex;
+    flex-direction: row;
+}
+
+#contact div {
+    margin-left: 10%;
+}
+
+#contact-header h2 {
+    font-size: 80px;
+    text-align: center;
+}
+
+#contact-header p {
+    font-size: 30px;
+    text-align: justify;
+}
+
+#contact div form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.form-item {
+    padding: 15px;
+    margin-top: 10px;
+    font-size: 20px;
+    border: 1px solid #c7bcbc;
+    border-radius: 10px;
+}
+
+.input:focus {
+    background-color: #e7d6d6;
+    outline: none;
+    border: none;
+}
+
+.submit {
+    background-color: #5959a1;
+    color: #ffffff;
+}
+
+#contact img {
+    width: 60%;
+    margin-left: auto;
+}
+
+footer {
+    background-color: #3c3cda;
+}
+
+.social-media{
+    padding-top: 10px;
+    text-align: center;
+}
+
+.social-media a {
+    padding: 20px;
+    font-size: 40px;
+    color: #8dc5c9;
+    text-decoration: none;
+}
+
+.footer-info {
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #8dc5c9;
+    text-align: center;
+}
+
+.footer-info i {
+    font-size: 20px;
+    color: #8dc5c9;
+}
